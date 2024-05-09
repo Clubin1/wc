@@ -1,6 +1,7 @@
 import os
 import sys
 
+# TODO add support for reading from stdin
 class WC:
     def __init__(self, args):
         self.flag = None
@@ -68,6 +69,7 @@ class WC:
             self.count_chars()
 
     def _print_usage(self):
+        """Utility function to print the usage message"""
         print("Usage: wc [options] [file]")
         print("Options:")
         print("  -c, --bytes    Count the number of bytes in a file")
